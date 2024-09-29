@@ -123,7 +123,16 @@ public class ParasiticManagerHooker {
                     protected void afterHookedMethod(MethodHookParam param) {
                         var pkgInfo = getManagerPkgInfo(null);
                         if (pkgInfo != null && XposedHelpers.getObjectField(param.thisObject, "mApplicationInfo") == pkgInfo.applicationInfo) {
-                            sendBinderToManager((ClassLoader) param.getResult(), managerService.asBinder());
+                            // Forked from https://github.com/mywalkb/LSPosed_mod/commit/da1daff
+                            // Fix for Android 14 QPR3 and above
+                            var sSourceDir = pkgInfo.applicationInfo.sourceDir;
+                            var pathClassLoader = param.getResult();
+                            var pathList = XposedHelpers.getObjectField(pathClassLoader, "pathList");
+                            List<String> lstDexPath = (List<String>) XposedHelpers.callMethod(pathList, "getDexPaths");
+                            if (!lstDexPath.contains(sSourceDir)) {
+                                XposedHelpers.callMethod(pathClassLoader, "addDexPath", sSourceDir);
+                            }
+                            sendBinderToManager((ClassLoader) pathClassLoader, managerService.asBinder());
                             unhooks[0].unhook();
                         }
                     }
