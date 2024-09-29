@@ -303,7 +303,7 @@ val pushDaemonNative = task<Exec>("pushDaemonNative") {
             }
             outputStream.toString().trim()
         }
-        workingDir(project(":daemon").layout.buildDirectory.dir("intermediates/stripped_native_libs/debug/out/lib/$abi"))
+                workingDir(project(":daemon").layout.buildDirectory.dir("intermediates/stripped_native_libs/debug/stripDebugDebugSymbols/out/lib/$abi"))
     }
     commandLine(adb, "push", "libdaemon.so", "/data/local/tmp/libdaemon.so")
 }
