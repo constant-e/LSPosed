@@ -1,12 +1,13 @@
 # LSPosed Framework
 
-**Debug版正常，Release版崩溃（我也不知道为什么）**
+**目前状态：似乎正常**
 
 在出现成熟的LSPosed分支或替代前临时使用。我不是专业的Android开发者，这个仓库仅包含兼容新Android的必要修改（来自其他开发者），以保留与原版的兼容性。
 
 鸣谢：
 1. [Android 14 QPR3 及以上的修复](https://github.com/mywalkb/LSPosed_mod/commit/da1daff)
 2. [Stripped libart 支持](https://github.com/mywalkb/LSPosed_mod/commit/92a04e3)
+3. [更新SDK和依赖时的参考](https://github.com/JingMatrix/LSPosed/tree/4666b13)
 
 ## Introduction 
 
