@@ -7,7 +7,8 @@
 鸣谢：
 1. [Android 14 QPR3 及以上的修复](https://github.com/mywalkb/LSPosed_mod/commit/da1daff)
 2. [Stripped libart 支持](https://github.com/mywalkb/LSPosed_mod/commit/92a04e3)
-3. [更新SDK和依赖时的参考](https://github.com/JingMatrix/LSPosed/tree/4666b13)
+3. [更新SDK和依赖时的参考](https://github.com/JingMatrix/LSPosed)
+4. [npm-open](https://github.com/5ec1cff/LSPosed/tree/npm-open)
 
 ## Introduction 
 
