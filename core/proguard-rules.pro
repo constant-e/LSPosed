@@ -6,6 +6,9 @@
 -keep class org.lsposed.lspd.util.Hookers {*;}
 -keepattributes RuntimeVisibleAnnotations
 -keep class android.** { *; }
+-keepnames class org.lsposed.lspd.impl.LSPosedHelper {
+    public <methods>;
+}
 -keepclasseswithmembers,includedescriptorclasses class * {
     native <methods>;
 }
