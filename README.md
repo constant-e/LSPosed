@@ -1,6 +1,14 @@
 # LSPosed Framework
 
-[![Build](https://img.shields.io/github/actions/workflow/status/LSPosed/LSPosed/core.yml?branch=master&event=push&logo=github&label=Build)](https://github.com/LSPosed/LSPosed/actions/workflows/core.yml?query=event%3Apush+branch%3Amaster+is%3Acompleted) [![Crowdin](https://img.shields.io/badge/Localization-Crowdin-blueviolet?logo=Crowdin)](https://lsposed.crowdin.com/lsposed) [![Channel](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/LSPosed) [![Chat](https://img.shields.io/badge/Join-QQ%E9%A2%91%E9%81%93-red?logo=tencent-qq&logoColor=red)](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=Xz9dJ&from=246610&biz=ka) [![Download](https://img.shields.io/github/v/release/LSPosed/LSPosed?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/LSPosed/LSPosed/releases/latest) [![Total](https://shields.io/github/downloads/LSPosed/LSPosed/total?logo=Bookmeter&label=Counts&logoColor=yellow&color=yellow)](https://github.com/LSPosed/LSPosed/releases)
+**目前状态：似乎正常**
+
+在出现成熟的LSPosed分支或替代前临时使用。我不是专业的Android开发者，这个仓库仅包含兼容新Android的必要修改（来自其他开发者），以保留与原版的兼容性。
+
+鸣谢：
+1. [Android 14 QPR3 及以上的修复](https://github.com/mywalkb/LSPosed_mod/commit/da1daff)
+2. [Stripped libart 支持](https://github.com/mywalkb/LSPosed_mod/commit/92a04e3)
+3. [更新SDK和依赖时的参考](https://github.com/JingMatrix/LSPosed)
+4. [npm-open](https://github.com/5ec1cff/LSPosed/tree/npm-open)
 
 ## Introduction 
 
